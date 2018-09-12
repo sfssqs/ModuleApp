@@ -1,4 +1,10 @@
-apply plugin: 'com.android.library'
+System.out.println("isModule:" + isModule.toBoolean())
+
+if (isModule.toBoolean()) {
+
+} else {
+    apply plugin: 'com.android.application'
+}
 
 android {
     compileSdkVersion 22
